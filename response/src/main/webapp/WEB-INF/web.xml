@@ -22,7 +22,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>randompic</servlet-name>
-        <url-pattern>/rpic</url-pattern>
+        <url-pattern>/randompic</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -34,4 +34,21 @@
         <url-pattern>/rdirect</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>rpic</servlet-name>
+        <servlet-class>com.qizi.servlet.DrawImage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpic</servlet-name>
+        <url-pattern>/rpic</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cpic</servlet-name>
+        <servlet-class>com.qizi.servlet.CheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cpic</servlet-name>
+        <url-pattern>/cpic</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -14,6 +14,7 @@ import java.util.Random;
  * @author : qizidog
  * @date : 2020-07-12 21:01
  * @description :
+ * 创建随机数图片，并每隔3s在浏览器端自动刷新一次
  **/
 
 public class RandomNumPic extends HttpServlet {

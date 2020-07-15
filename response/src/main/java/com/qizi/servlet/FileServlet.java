@@ -7,13 +7,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URLEncoder;
 
 /**
  * @author : qizidog
  * @date : 2020-07-12 15:10
  * @description :
+ * 实现从浏览器中下载图片
  **/
 
 public class FileServlet extends HttpServlet {

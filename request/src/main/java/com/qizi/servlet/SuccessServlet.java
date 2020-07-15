@@ -8,18 +8,18 @@ import java.io.IOException;
 
 /**
  * @author : qizidog
- * @date : 2020-07-12 21:53
+ * @date : 2020-07-15 20:58
  * @description :
  **/
 
-public class RedirectServlet extends HttpServlet {
+public class SuccessServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        resp.sendRedirect(req.getContextPath()+"/rpic");  // 重定向
-
-        // 上面的方法等同于下面两句
-        resp.setHeader("Location", req.getContextPath()+"/randompic");
-        resp.setStatus(302);
+//        req.setCharacterEncoding("utf-8");
+//        resp.setCharacterEncoding("UTF-8");  // 不知道为什么不起作用(好像跟转发有关系)
+        resp.setHeader("content-type", "text/html;charset=UTF-8");
+        resp.getWriter().println("<h1>登录成功</h1>");
+        System.out.println("登录成功");
     }
 
     @Override
